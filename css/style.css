@@ -1,0 +1,326 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+	padding-top: 8rem;
+}
+
+header{
+  z-index: 2000;
+  display: block;
+  position: fixed;
+  height: 8rem;
+  width: 100%;
+  padding: 1.8rem 3rem 0;
+  transition:.3s ease-in-out;
+  background-color: #ffffff;
+  margin-top: -8rem;
+}
+
+header .hd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_tit a{
+  display: block;
+  position: relative;
+  width: 12rem;
+}
+
+.mob_btn {
+  width: 3rem;
+  height: 2rem;
+  position: absolute;
+  left: 1.8rem;
+  top: 1.8rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+.mob_btn span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #222222e7;
+  text-indent: -9999px;
+	border-radius: 35px;
+  transition: 0.3s;
+}
+.mob_btn span:nth-child(1){top: 0;}
+.mob_btn span:nth-child(2){top: 50%;}
+.mob_btn span:nth-child(3){top: 100%;}
+
+
+.subNav{
+  position: fixed;
+  top: 6.3rem;
+  width: 30rem;
+  height: 100vh;
+  left: -110%;
+  color: #fff;
+  transition: left 0.3s ease-in-out;
+  padding-top: 1.5rem;
+}
+
+.subNav .inner{
+  background-color: #222222ef;
+  padding: 2rem;
+}
+
+.sub_menu .sub_tit{display: none;}
+.sub_menu .menu1>li{
+  padding: 2rem auto;
+}
+
+.sub_menu .menu1>li>span{
+  display: block;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  width: 10rem;
+  margin:3rem auto;
+  color: #fff;
+  transition: 0.35s;
+}
+
+.sub_menu .menu1>li>span:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.sub_menu .menu1>li:nth-of-type(5){
+  border-style: none;
+}
+
+.mOpen .subNav{left: 0;}
+
+.mOpen .mob_btn span:nth-child(1){
+  transform: rotate(45deg);
+  top: 50%;
+}
+.mOpen .mob_btn span:nth-child(2){
+  opacity: 0;
+}
+.mOpen .mob_btn span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+
+/* 메인 */
+
+.main{
+  width: 100%;
+  height: 40rem;
+  background: url(../image/dip.png) no-repeat center center/cover;
+  position: relative;
+}
+
+.main h2{
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+  text-align: right;
+  right: 2.5rem;
+  bottom: 1rem;
+}
+
+/* 신제품 */
+
+.new{
+  width: 100%;
+  padding: 3rem;
+  padding-top: 5rem;
+}
+
+.new h2{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.new_all{margin-top: 1rem;}
+
+.new_all h3{
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.new_all h3 b{color: #046EEB;}
+
+.new_all img{width: 100%;}
+
+.new_all p{
+  margin-top: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.new_all p span{line-height: 2.5rem;}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn em{
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #2F9BFF;
+  color: #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 1.8rem;
+  margin-top: 1.8rem;
+  transition: 0.35s;
+}
+
+.btn:hover em{
+  background-color: #ffd724;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* 향수 */
+
+
+.perfume h2{
+  padding: 3rem;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.swiper-wrapper{display: flex;}
+
+.swiper-slide{flex-shrink: 0;}
+
+.swiper-slide img{
+  width: 19rem;
+  border-radius: 1rem;
+}
+
+.swiper-slide p{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.swiper-slide span{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #575757;
+}
+
+.btn2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.btn2 em{
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 1.8rem;
+  margin-top: 1.8rem;
+  transition: 0.35s;
+}
+
+.btn2:hover em{
+  background-color: #ffffff;
+  border: 1px solid #333;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* 서비스 */
+
+.service{
+  width: 100%;
+  padding: 3rem;
+  padding-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service h2{
+  font-size: 2.7rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.ser1, .ser2{display: flex;}
+
+.ser_img1{margin-right: 1rem;}
+
+.ser p{
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.ser2{margin-top: 2.5rem;}
+
+/* 푸터 */
+
+.ft_all{
+  width: 100%;
+  padding: 3rem;
+  background-color: #222;
+}
+
+.ft_icon{
+  color: #fff;
+  text-align: center;
+  font-size: 3.3rem;
+}
+
+.icon1{margin-right: 2rem;}
+
+.ft_img{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.ft_all p{
+  color: #bababa;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ft_icon a{transition: 0.3s;}
+
+a:nth-child(1):hover{
+  cursor: pointer;
+  color: #9c9c9c;
+}
+
+a:nth-child(2):hover{
+  cursor: pointer;
+  color: #9c9c9c;
+}
+
+a:nth-child(3):hover{
+  cursor: pointer;
+  color: #9c9c9c;
+}

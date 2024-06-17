@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diptyque</title>
+  <link rel="shortcut icon" href="image/logo_s.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    
+  <header>
+    <div class="hd">
+      <div class="header_tit">
+        <a href="#none">
+          <img src="image/diptyque_logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="header_left">
+        <a href="#none" class="mob_btn mOpen">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="sub_menu">
+            <ul class="menu1">
+              <li>
+                <span>New</span>
+                <span>Perfume</span>
+                <span>Candle</span>
+                <span>Gifts</span>
+                <span>Service</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="main_visual">
+    <div class="main">
+      <h2>DIPTQUE<br>PARIS</h2>
+    </div>
+  </section>
+  <section id="new_product">
+    <div class="new">
+      <h2>딥티크 신제품</h2>
+      <div class="new_all">
+        <h3>SUMMER<br><b>HIGHLIGHTS</b></h3>
+        <img src="image/summer.png" alt="">
+        <p>
+          <span>
+            푸른 하늘과 달콤하고 느린 삶.<br>
+            지중해 색상에 흠뻑 젖은 여름 필수품을<br>
+            선택하여 더 화창한 기후로 탈출하세요.
+          </span>
+        </p>
+        <div class="btn"><em>컬렉션 살펴보기</em></div>
+      </div>
+    </div>
+  </section>
+  <section id="per">
+    <div class="perfume">
+      <h2>딥티크 향수</h2>
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/perfume1.png" alt="perfume">
+            <p>우디 <span>25개제품</span></p>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/perfume2.png" alt="perfume">
+            <p>플로럴 <span>39개제품</span></p>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/perfume3.png" alt="perfume">
+            <p>호박 <span>13개제품</span></p>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/perfume4.png" alt="perfume">
+            <p>시프레 <span>6개제품</span></p>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/perfume5.png" alt="perfume">
+            <p>시트러스 <span>4개제품</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="btn2"><em>모든 제품 보기</em></div>
+    </div>
+  </section>
+  <section>
+    <div class="service">
+      <h2>딥티크 서비스</h2>
+      <div class="service_all">
+        <div class="ser1">
+          <div class="ser ser_img1">
+            <img src="image/service1.png" alt="service">
+            <p>150,000이상<br>주문 시<br><b>무료 배송</b></p>
+          </div>
+          <div class="ser ser_img1">
+            <img src="image/service2.png" alt="service">
+            <p>무료 딥티크<br><b>선물 세트</b></p>
+          </div>
+          <div class="ser">
+            <img src="image/service3.png" alt="service">
+            <p>향수<br><b>구매 시 사용</b></p>
+          </div>
+        </div>
+        <div class="ser2">
+          <div class="ser ser_img1">
+            <img src="image/service4.png" alt="service">
+            <p>모든 주문에<br>2개의 무료<br><b>샘플 제공</b></p>
+          </div>
+          <div class="ser ser_img1">
+            <img src="image/service5.png" alt="service">
+            <p>무료 반품</p>
+          </div>
+          <div class="ser">
+            <img src="image/service6.png" alt="service">
+            <p>환영 선물</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="ft_all">
+      <div class="ft_icon">
+        <a href="#none" class="icon1"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#none" class="icon1"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#none"><i class="fa-brands fa-facebook-f"></i></a>   
+      </div>
+      <div class="ft_img"><img src="image/logo_white.png" alt="logo"></div>
+      <p>&copy;2020 SHINSEGAE INTERNATIONAL. ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/header.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
